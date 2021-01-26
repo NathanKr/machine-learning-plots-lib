@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 def linear_line(x,intercept,slope):
     return slope * x + intercept
 
+
 def plot_with_residual(X,Y,intercept,slope,color='g',linewidth=3):
     h = linear_line(X,intercept,slope)
     plt.plot(X,Y,'o',X,h)
